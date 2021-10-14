@@ -42,8 +42,10 @@ form {
 
 .main-header__nav {
   height: 100%;
-  display: none;
+  width: 100%;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .main-header__item-list {
@@ -216,6 +218,23 @@ form {
   color: white;
 }
 
+.user-message {
+  margin: auto;
+  width: 90%;
+  border: 1px solid rgb(80, 80, 242);
+  background: rgb(207, 207, 255);
+  padding: 1rem;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.user-message--error {
+  border-color: red;
+  background-color: rgb(230, 167, 167);
+  color: red;
+  padding: .5rem;
+}
+
 @media (min-width: 768px) {
   .main-header__nav {
     display: flex;
@@ -223,5 +242,9 @@ form {
 
   #side-menu-toggle {
     display: none;
+  }
+
+  .user-message{
+    width: 30rem;
   }
 }

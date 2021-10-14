@@ -21,3 +21,10 @@
 .form-control textarea:focus {
   outline-color: #00695c;
 }
+
+.form-section{
+  margin: 3rem 0;
+  padding: 1rem;
+  border: 1px solid #00695c;
+  border-radius: 3px;
+}
