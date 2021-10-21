@@ -65,6 +65,7 @@ exports.postAddProduct = (req, res, next) => {
     //   })
       // res.redirect('/500');
       const error = new Error(err)
+      console.log(err)
       error.httpStatusCode = 500;
       return next(error);
     });

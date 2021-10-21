@@ -72,7 +72,7 @@ app.use((req, res, next) => {
       throw new Error(err);
   });
 })
-
+ 
 app.use((req, res, next) => {
   //sets local variables that go into all the views
   res.locals.isAuthenticated = req.session.isLoggedIn;

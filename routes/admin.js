@@ -15,9 +15,10 @@ router.get('/add-product', adminController.getAddProduct);
 router.get('/products', isAuth, adminController.getProducts);
 
 // // /admin/add-product => POST
-router.post('/add-product', [
+router.post('/add-product',
+    [
     body('title')
-        .isAlphanumeric()
+        .isString()
         .isLength({ min: 3 })
         .trim(),
     body('imageUrl')
@@ -26,7 +27,8 @@ router.post('/add-product', [
         .isFloat(),
     body('description')
         .trim()
-], isAuth, adminController.postAddProduct);
+],
+    isAuth, adminController.postAddProduct);
 
 router.get('/edit-product/:productId', isAuth, adminController.getEditProduct);
 
