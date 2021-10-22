@@ -25,3 +25,8 @@
 .product__description {
     text-align: center;
 }
+
+.creator{
+    color: rgb(171, 171, 171);
+    padding-top: 5px;
+}
